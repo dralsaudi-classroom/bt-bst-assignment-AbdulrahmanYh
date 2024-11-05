@@ -160,11 +160,13 @@ public class BST<T> {
 		// the BST methods.
 
 		current = root;
-		while (current.key != k) {
+		while (current.key != null) {
 			if (k > current.key)
 				current = current.right;
 			else if (k < current.key)
 				current = current.left;
+			else 
+				break;
 		}
 		return RecCount(current);
 	}
