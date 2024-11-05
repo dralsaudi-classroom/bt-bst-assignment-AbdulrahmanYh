@@ -160,7 +160,7 @@ public class BST<T> {
 		// the BST methods.
 
 		current = root;
-		while (current.key != null) {
+		while (current != null) {
 			if (k > current.key)
 				current = current.right;
 			else if (k < current.key)
